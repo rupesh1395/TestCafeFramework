@@ -4,5 +4,4 @@ export default class UrlPage {
     public static getPageUrl(): string {
         return this.baseUrl;
     }
-
 }

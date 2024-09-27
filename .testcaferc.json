@@ -1,0 +1,7 @@
+{
+    "skipJsErrors": true,
+    "pageRequestTimeout": 60000,
+    "browserInitTimeout": 600000,
+    "experimentalMultipleWindows": true
+    
+}
