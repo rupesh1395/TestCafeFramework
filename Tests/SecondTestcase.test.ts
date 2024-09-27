@@ -4,7 +4,7 @@ import UrlPage from "../Utils/UrlPage";
 import ProductPage from "../Pages/ProductPage";
 
 
-fixture('Testing Home Page')
+fixture('Testing product page')
   .page(UrlPage.getPageUrl())
   .afterEach(async (t) => {
     const { error, log } = await t.getBrowserConsoleMessages();
@@ -17,10 +17,12 @@ fixture('Testing Home Page')
 ValidateHomePageFunctionality();
 
 function ValidateHomePageFunctionality(): any {
-  test('Validate products is visible', async (t) => {
+  test('Validate cart is added', async (t) => {
    await t.maximizeWindow();
    await HomePage.clickOnMobileLink();
    await ProductPage.validateProuctVisibility();
+   await ProductPage.ClickOnAddToCartButton();
+   await ProductPage.ValidateCartCount();
    t.ctx.passed=true;
   });
 }

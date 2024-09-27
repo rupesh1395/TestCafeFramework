@@ -8,7 +8,7 @@ export default class ProductPage {
     static cartCountSelector: Selector = Selector('#nav-cart-count');
 
 
-    public static async ClickOnFirstProduct(): Promise<void> {
+    public static async validateProuctVisibility(): Promise<void> {
         await t.expect(this.laptopAndAccLink.exists).ok({timeout: 10000});
         await t.hover(this.laptopAndAccLink);
         await t.click(this.BudgetLaptopCategoryLink);
