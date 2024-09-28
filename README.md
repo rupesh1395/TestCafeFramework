@@ -1,4 +1,4 @@
-# TestCafeFramework
+# testcafe-automation-framework-typescript
 Testcafe automation testing framework with typescript
 # After clone the repo 
 # Run command 
